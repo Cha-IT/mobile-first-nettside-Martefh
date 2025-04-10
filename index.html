@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Mobile-Først Nettside</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="tekstut"></div>
+  <header>
+    <nav>
+        <h1>Kosekroken</h1>
+        <ul>
+          <li><a href="#home">Hjem</a></li>
+          <li><a href="#menu">Meny</a></li>
+          <li><a href="#order">Bestill</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+    <div id="home">
+      <h1>Velkommen til Kosekroken</h1>
+      <p>Kosekroken er stedet for deg som vil nyte god kaffe, ferske bakverk og en lun atmosfære. Enten du vil slappe av alene eller tilbringe tid med venner, står vi klare til å gi deg en hyggelig opplevelse. Velkommen inn – her er det alltid plass til en koselig stund! Oppdag vår deilige meny og bestill direkte fra mobilen.</p>
+    </div>
+  <main>  
+    <div id="menu">
+      <h2>Meny</h2>
+      <ul id="menu-list">
+        <!-- Menyelementer blir lagt til her -->
+      </ul>
+        <section id="drikke">
+        </section>
+
+        <section id="småretter-lunsj">
+        </section>
+
+        <section id="søtsaker">
+        </section>
+      
+      </div>
+
+    
+</main>
+
+    <section id="order">
+      <h2>Din Bestilling</h2>
+      <ul id="order-list">
+        <!-- Bestillingsliste vil bli lagt til her -->
+      </ul>
+      <div id="modal" class="hidden"></div>
+        <div id="modal-content">
+          <p id="modal-message"></p>
+        </div>
+      </div>
+      <button id="submit-order">Send Bestilling</button>
+    </section>
+
+    <section id="contact">
+      <h2>Kontakt Oss</h2>
+      <p>Adresse: Bakkegata 13, 7010 Trondheim</p>
+      <p>Telefon: 123 45 678</p>
+      <div id="map">
+        <div id="bilde"> 
+            <img id="kafésted" src="img/Kosekroken.png" alt="Bilde av hvor Kosekroken ligger på kartet">
+            <a href="https://www.google.no/maps/@63.4276618,10.403895,16.85z?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D">Vei beskrivelse</a>
+        </div>
+      </div>
+    </section>
+  
+  <footer>
+    <br><p>Gmail: &copy;Kosekroken202</p> </br>
+    <br><p>Instagram: @kosekroken</p> </br>
+    
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
