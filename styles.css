@@ -1,0 +1,119 @@
+/* Grunnleggende stiler for mobile enheter */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ed7c7cd2;
+  }
+
+  #home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  header {
+    background-color: #ed7c7c;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav {
+    background-color: #ed7c7c;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+
+  #modal{
+    display: none; /* Skjult som standard */
+    position: fixed; /* Fiksert posisjon */
+    z-index: 1000; /* Høyere enn andre elementer */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full bredde */
+    height: 100%; /* Full høyde */
+    overflow: auto; /* Rull hvis nødvendig */
+    background-color: rgb(0,0,0); /* Svart bakgrunn med opasitet */
+    background-color: rgba(0,0,0,0.4); /* Svart bakgrunn med opasitet */
+    padding-top: 60px; /* Plass til toppen av vinduet */
+  }
+
+  
+  footer {
+    background-color:  #ed7c7c9c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+  }
+  
+  /* Stiler for større skjermer */
+  @media (min-width: 10px) {
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin-right: 20px;
+    }
+  
+    main {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    section {
+      width: 30%;
+    }
+
+    #kafésted{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 350px;
+      height: 400px;
+    }
+
+  }
+
+button.legg-til-knapp {
+    background-color: #962d2d;
+    color: rgb(0, 0, 0);
+}
